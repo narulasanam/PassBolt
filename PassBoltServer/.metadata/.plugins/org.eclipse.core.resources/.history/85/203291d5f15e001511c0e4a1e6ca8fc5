@@ -189,7 +189,7 @@ public class Server {
 	    HtmlTextInput emailField = (HtmlTextInput)form.getInputByName("email");
 	    HtmlPasswordInput passwordField = (HtmlPasswordInput)form.getInputByName("pass");
 	    //HtmlButton button = (HtmlButton) page1.getByXPath("/html/body//form//input[@type='submit' and @value='Log in']");
-	    final HtmlSubmitInput button = (HtmlSubmitInput)page1.getElementById("u_0_x");//("Log in");
+	    final HtmlSubmitInput button = (HtmlSubmitInput) page1.getElementById("u_0_x");//("Log in");
 	    //HtmlSubmitInput button = form.getInputByName("Log In");
 	    //final HtmlTextInput textField = form.getInputByName("pass");
 
@@ -203,18 +203,12 @@ public class Server {
 	    // Now submit the form by clicking the button and get back the second page.
 	    final HtmlPage page2 = button.click();
 	    System.out.println(page2);
-	    
-	    System.out.println(page2.getUrl());
+	    System.out.println(page2.getBaseURI());
 	    
 	    
 	    page2.getWebClient().loadDownloadedResponses();
 //	    File htmlFile = new File(page2.getBaseURI());
-	    try {
-			Desktop.getDesktop().browse(page2.getUrl().toURI());
-		} catch (URISyntaxException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//	    Desktop.getDesktop().browse(htmlFile.toURI());
 	    //webClient.closeAllWindows();
 	}
 
@@ -222,13 +216,12 @@ public class Server {
 	    url = "http://www.facebook.com";
 		if (Desktop.isDesktopSupported()) {
 			Desktop desktop = Desktop.getDesktop();
-//			try {
-//				System.out.println("hello");
-//				//desktop.browse(new URI(url));
-//			} catch (IOException | URISyntaxException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
+			try {
+				desktop.browse(new URI(url));
+			} catch (IOException | URISyntaxException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} else {
 			Runtime runtime = Runtime.getRuntime();
 			try {

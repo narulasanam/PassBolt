@@ -204,7 +204,7 @@ public class Server {
 	    final HtmlPage page2 = button.click();
 	    System.out.println(page2);
 	    
-	    System.out.println(page2.getUrl());
+	    //System.out.println(page2.getBaseURI());
 	    
 	    
 	    page2.getWebClient().loadDownloadedResponses();
@@ -222,13 +222,12 @@ public class Server {
 	    url = "http://www.facebook.com";
 		if (Desktop.isDesktopSupported()) {
 			Desktop desktop = Desktop.getDesktop();
-//			try {
-//				System.out.println("hello");
-//				//desktop.browse(new URI(url));
-//			} catch (IOException | URISyntaxException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
+			try {
+				desktop.browse(new URI(url));
+			} catch (IOException | URISyntaxException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} else {
 			Runtime runtime = Runtime.getRuntime();
 			try {
