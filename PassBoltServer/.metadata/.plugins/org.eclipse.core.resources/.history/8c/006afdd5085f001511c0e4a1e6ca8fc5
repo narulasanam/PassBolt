@@ -90,11 +90,11 @@ public class Client {
         while((input=br.readLine())!=null){
         	System.out.println(input);
         	c.sendText("lc");
-        	if (input.contains("wr")) { // The write command (wr) expects a newline before the string being sent is entered
-        		c.sendText(br.readLine());
-        	} else {
-        		c.send(input);
-        	}
+//        	if (input.contains("wr")) { // The write command (wr) expects a newline before the string being sent is entered
+//        		c.sendText(br.readLine());
+//        	} else {
+//        		c.send(input);
+//        	}
         }
 		
 	}

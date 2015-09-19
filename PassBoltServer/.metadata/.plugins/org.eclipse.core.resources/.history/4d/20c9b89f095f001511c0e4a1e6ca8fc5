@@ -111,10 +111,10 @@ public class Server {
 	}
 
 	private String getUsername(){
-		return "***************";
+		return "waterloopassbolt@gmail.com";
 	}
 	private String getPassword(){
-		return "**********";
+		return "waterloo321";
 	}
 	/**
 	 * Create a new server that listens on port 5555.

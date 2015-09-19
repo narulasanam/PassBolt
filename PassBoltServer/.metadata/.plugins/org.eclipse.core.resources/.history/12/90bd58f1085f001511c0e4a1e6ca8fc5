@@ -83,7 +83,6 @@ public class Server {
 
 	private void launchLinkedIn() {
 		// TODO Auto-generated method stub
-		System.out.println("Launching Linkedin");
 		driver.get("https://www.linkedin.com/");
 
 		WebElement userQuery = driver.findElement(By.name("session_key"));
@@ -98,7 +97,6 @@ public class Server {
 	}
 
 	public void launchFacebook() {
-		System.out.println("Launching fb");
 		driver.get("http://www.facebook.com");
 		WebElement userQuery = driver.findElement(By.name("email"));
 		WebElement passQuery = driver.findElement(By.name("pass"));
@@ -111,7 +109,7 @@ public class Server {
 	}
 
 	private String getUsername(){
-		return "***************";
+		return "*************";
 	}
 	private String getPassword(){
 		return "**********";
