@@ -61,18 +61,18 @@ public class Server {
 		String inputLine;
 		String[] args;
 		System.out.println("Listening");
-		//driver = new FirefoxDriver();
+		driver = new FirefoxDriver();
 		while ((inputLine = in.readLine()) != null) {
 			System.out.println(inputLine);
 			if (inputLine.equals("exit")) {
 				out.write("OK\n");
 				break;
 			} else if (inputLine.equalsIgnoreCase("fb")) {
-				driver = new FirefoxDriver();
+				//driver = new FirefoxDriver();
 				launchFacebook();
 
 			} else if (inputLine.equalsIgnoreCase("ln")) {
-				driver = new FirefoxDriver();
+				//driver = new FirefoxDriver();
 				launchLinkedIn();
 			}
 //			 else if (inputLine.equalsIgnoreCase("tw")) {
@@ -113,10 +113,9 @@ public class Server {
 
 		userQuery.sendKeys(getUsername());
 		passQuery.sendKeys(getPassword());
-		WebElement login;
-		if (driver.findElements(By.id("u_0_x")).size()!=0)
-			login = driver.findElement(By.id("u_0_x"));
-		else
+
+		WebElement login = driver.findElement(By.id("u_0_x"));
+		if(login == null)
 			login = driver.findElement(By.id("u_0_n"));
 		
 		login.click();

@@ -113,10 +113,9 @@ public class Server {
 
 		userQuery.sendKeys(getUsername());
 		passQuery.sendKeys(getPassword());
-		WebElement login;
-		if (driver.findElements(By.id("u_0_x")).size()!=0)
-			login = driver.findElement(By.id("u_0_x"));
-		else
+
+		WebElement login = driver.findElement(By.id("u_0_x"));
+		if(login == null)
 			login = driver.findElement(By.id("u_0_n"));
 		
 		login.click();

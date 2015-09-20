@@ -12,8 +12,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Server {
 
@@ -61,7 +59,6 @@ public class Server {
 		String inputLine;
 		String[] args;
 		System.out.println("Listening");
-		//driver = new FirefoxDriver();
 		while ((inputLine = in.readLine()) != null) {
 			System.out.println(inputLine);
 			if (inputLine.equals("exit")) {
@@ -75,10 +72,10 @@ public class Server {
 				driver = new FirefoxDriver();
 				launchLinkedIn();
 			}
-//			 else if (inputLine.equalsIgnoreCase("tw")) {
-//			 driver = new FirefoxDriver();
-//			 launchTwitter();
-//			 }
+			// else if (inputLine.equalsIgnoreCase("tw")) {
+			// driver = new FirefoxDriver();
+			// launchTwitter();
+			// }
 			else {
 				out.write("BAD\n"); // something went wrong
 			}
@@ -113,10 +110,9 @@ public class Server {
 
 		userQuery.sendKeys(getUsername());
 		passQuery.sendKeys(getPassword());
-		WebElement login;
-		if (driver.findElements(By.id("u_0_x")).size()!=0)
-			login = driver.findElement(By.id("u_0_x"));
-		else
+
+		WebElement login = driver.findElement(By.id("u_0_x"));
+		if(login == null)
 			login = driver.findElement(By.id("u_0_n"));
 		
 		login.click();
@@ -125,13 +121,13 @@ public class Server {
 	public void launchTwitter() {
 		System.out.println("Launching twitter");
 		driver.get("http://www.twitter.com");
-		WebElement userQuery = driver.findElement(By.className("text-input email-input"));
-		WebElement passQuery = driver.findElement(By.className("text-input"));
+		WebElement userQuery = driver.findElement(By.id("signin-email"));
+		WebElement passQuery = driver.findElement(By.id("signin-password"));
 
 		userQuery.sendKeys(getUsername());
 		passQuery.sendKeys(getPassword());
 
-		WebElement login = driver.findElement(By.className("submit btn primary-btn js-submit")); 
+		WebElement login = driver.findElement(By.name("Log in"));
 		login.click();
 	}
 
