@@ -61,7 +61,7 @@ public class Server {
 	public void listen() throws IOException, AWTException, InterruptedException {
 		String inputLine;
 		String[] args;
-		System.out.println("Listening from here");
+		System.out.println("Listening");
 		
 		//driver = new FirefoxDriver();
 		while ((inputLine = in.readLine()) != null) {

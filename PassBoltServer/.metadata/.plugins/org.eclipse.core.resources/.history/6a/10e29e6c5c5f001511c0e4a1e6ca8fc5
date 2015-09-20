@@ -64,6 +64,7 @@ public class Server {
 		System.out.println("Listening from here");
 		
 		//driver = new FirefoxDriver();
+		System.out.println(in.readLine()+"jiijiji");
 		while ((inputLine = in.readLine()) != null) {
 			System.out.println(inputLine);
 			args = inputLine.split(",");

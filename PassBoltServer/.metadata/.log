@@ -259,3 +259,21 @@ Contains: Could not delete: C:\Users\Narula\workspace\PassBolt\PassBoltServer\Pa
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2015-09-19 15:56:22.355
 !MESSAGE Failed to resolve selection in '=PassBoltServer/src<com.passbolt.server{ServerLib.java' at offset 0
+
+!ENTRY org.eclipse.ui 4 4 2015-09-20 00:53:55.642
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2015-09-20 00:53:55.705
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2015-09-20 00:53:55.736
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2015-09-20 00:53:55.751
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies
+
+!ENTRY org.eclipse.ui 4 4 2015-09-20 00:53:55.751
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.disable.grammar.constraints
+
+!ENTRY org.eclipse.ui 4 4 2015-09-20 00:53:55.767
+!MESSAGE Could not retrieve EHandlerService or ICommandService from context evaluation context fororg.eclipse.wst.xml.ui.reload.dependencies

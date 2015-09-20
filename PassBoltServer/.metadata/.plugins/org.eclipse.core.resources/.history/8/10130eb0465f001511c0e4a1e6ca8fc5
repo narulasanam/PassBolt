@@ -7,12 +7,13 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Server {
 
@@ -61,8 +62,7 @@ public class Server {
 	public void listen() throws IOException, AWTException, InterruptedException {
 		String inputLine;
 		String[] args;
-		System.out.println("Listening from here");
-		
+		System.out.println("Listening");
 		//driver = new FirefoxDriver();
 		while ((inputLine = in.readLine()) != null) {
 			System.out.println(inputLine);
@@ -70,15 +70,11 @@ public class Server {
 			setUserName(args[1]);
 			setPassword(args[2]);
 			
-			if (args[0].equalsIgnoreCase("fb")) {
+			if (args[3].equalsIgnoreCase("fb")) {
 				driver = new FirefoxDriver();
-//				driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-//		        driver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				launchFacebook();
-			} else if (args[0].equalsIgnoreCase("ln")) {
+			} else if (args[3].equalsIgnoreCase("ln")) {
 				driver = new FirefoxDriver();
-				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 				launchLinkedIn();
 			}
 //			 else if (inputLine.equalsIgnoreCase("tw")) {

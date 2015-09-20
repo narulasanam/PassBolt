@@ -43,11 +43,11 @@ public class Client {
 	 * @throws IOException
 	 */
 	public void send (String cmd) throws IOException {
-		System.out.println("from cmd :"+cmd);
+		System.out.println(cmd);
 		out.write(cmd + "\n");
-		out.flush();
 		
-		//in.readLine();
+		out.flush();
+		in.readLine();
 		
 		if (cmd.equals("exit")) {
 			exit();
@@ -89,7 +89,7 @@ public class Client {
 
         while((input=br.readLine())!=null){
         	System.out.println(input);
-        	//c.sendText("lc");
+        	c.sendText("lc");
         	if (input.contains("wr")) { // The write command (wr) expects a newline before the string being sent is entered
         		c.sendText(br.readLine());
         	} else {

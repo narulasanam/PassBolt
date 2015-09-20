@@ -43,11 +43,11 @@ public class Client {
 	 * @throws IOException
 	 */
 	public void send (String cmd) throws IOException {
-		System.out.println("from cmd :"+cmd);
+		System.out.println(cmd);
 		out.write(cmd + "\n");
-		out.flush();
 		
-		//in.readLine();
+		out.flush();
+		in.readLine();
 		
 		if (cmd.equals("exit")) {
 			exit();
@@ -61,7 +61,7 @@ public class Client {
 	 * @throws IOException
 	 */
 	public void sendText (String s) throws IOException{
-		System.out.println("from sendText"+s);
+		System.out.println(s);
 		out.write("wr\n");
 		out.write(s + "\n");
 		out.flush();
@@ -79,7 +79,7 @@ public class Client {
 	public static void main(String[] args) throws UnknownHostException, IOException, InterruptedException {
 		System.out.println("Starting Client");
 
-		Client c = new Client("172.16.36.146", 5555);
+		Client c = new Client("172.16.36.129", 5555);
 		System.out.println("Sending");
 		
 		BufferedReader br = 
@@ -89,7 +89,7 @@ public class Client {
 
         while((input=br.readLine())!=null){
         	System.out.println(input);
-        	//c.sendText("lc");
+        	c.sendText("lc");
         	if (input.contains("wr")) { // The write command (wr) expects a newline before the string being sent is entered
         		c.sendText(br.readLine());
         	} else {

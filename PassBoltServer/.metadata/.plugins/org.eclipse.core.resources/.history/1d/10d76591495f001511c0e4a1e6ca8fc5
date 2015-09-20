@@ -45,9 +45,9 @@ public class Client {
 	public void send (String cmd) throws IOException {
 		System.out.println("from cmd :"+cmd);
 		out.write(cmd + "\n");
-		out.flush();
 		
-		//in.readLine();
+		out.flush();
+		in.readLine();
 		
 		if (cmd.equals("exit")) {
 			exit();
