@@ -2,18 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="root set" key="selection"/>
+		<item value="Launching fb" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="root set"/>
-			<item value="serverlib"/>
-			<item value="URL"/>
+			<item value="Launching fb"/>
+			<item value="args"/>
+			<item value="FirefoxDriver"/>
+			<item value="firefox"/>
 			<item value="url"/>
-			<item value="google"/>
-			<item value="doc"/>
+			<item value="Url"/>
+			<item value="URL"/>
+			<item value="webclient"/>
 		</list>
 		<list key="replacehistory">
 		</list>
