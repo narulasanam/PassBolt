@@ -1,0 +1,67 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.passbolt.Remote"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/fbButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fb_text"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableLeft="@drawable/fb"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="fbClick"/>
+        <Button
+            android:id="@+id/linkButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/link_text"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableLeft="@drawable/link"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="linkClick"/>
+        <Button
+            android:id="@+id/googButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/goog_text"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableLeft="@drawable/goog"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="fbClick"/>
+        <Button
+            android:id="@+id/twitButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/twit_text"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableLeft="@drawable/twit"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="fbClick"/>
+        <Button
+            android:id="@+id/scotButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scot_text"
+            android:fontFamily="sans-serif-condensed"
+            android:drawableLeft="@drawable/scot"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:onClick="fbClick"/>
+    </LinearLayout>
+</ScrollView>

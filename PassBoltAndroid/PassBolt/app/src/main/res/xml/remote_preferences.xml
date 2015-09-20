@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference 
+        android:key="@string/ip_key"
+        android:title="@string/ip_addr"
+        android:summary="@string/ip_addr_sum"
+        />
+    <EditTextPreference 
+        android:key="@string/port_key"
+        android:title="@string/port"
+        android:summary="@string/port_sum"
+        />
+    
+
+</PreferenceScreen>

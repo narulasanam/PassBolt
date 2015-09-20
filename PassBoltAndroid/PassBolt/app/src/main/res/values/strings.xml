@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PassBolt</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="send_string">Send</string>
+    <string name="lc_string">Left Click</string>
+    <string name="rc_string">Right Click</string>
+    <string name="ip_addr">IP Address</string>
+    <string name="ip_addr_sum">IP Address of the server</string>
+    <string name="port">Port</string>
+    <string name="port_sum">Port to connect to on the server</string>
+    <string name="connect">Connect</string>
+    <string name="cancel">Cancel</string>
+    <string name="default_checkbox">Set as default?</string>
+    <string name="ip_key">com.passbolt.ip_key</string>
+    <string name="port_key">com.passbolt.port_key</string>
+    <string name="fb_text">Facebook: waterloopassbolt@gmail.com</string>
+    <string name="link_text">LinkedIn: waterloopassbolt@gmail.com</string>
+    <string name="goog_text">Google+: waterloopassbolt@gmail.com</string>
+    <string name="twit_text">Twitter: waterloopassbolt@gmail.com</string>
+    <string name="scot_text">Scotiabank: 4536000020172602</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_item">ItemActivity</string>
+
+    <string name="error">Error</string>
+    <string name="no_nfc">No NFC found on this device</string>
+    <string name="nfc_disabled">NFC is not enabled. Please go to the wireless settings to enable it.</string>
+    <string name="explanation">Explanation</string>
+    <string name="title_activity_nfc">NFC Activity</string>
+    <string name="title_activity_nfc_login">PassBolt</string>
+    <string name="disabled_nfc">NFC is disabled. Please enable</string>
+
+    <string name="title_activity_pass_bolt_login">PassBolt Login</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_pin">Pin</string>
+    <string name="prompt_card">Card ID</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+</resources>
