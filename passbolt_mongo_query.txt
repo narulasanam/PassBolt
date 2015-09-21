@@ -73,9 +73,7 @@ db.category_items.insert({"categoryName":"Utilities","itemName":"Rogers","itemUR
 --db.category_item_instances.insert({"categoryName":"Social Networks","itemName":"LinkedIn","instanceLogin":"waterloopassbolt@gmail.com","instancePwd":"w","userName":"vishal"});
 
 
-db.passbold_users.insert({"loginName":"rambo1","pin":"1234","card_id":"3176045525"});
-
-db.passbold_users.insert({"loginName":"vishal","pin":"4321","card_id":"4287963199"});
+db.passbold_users.insert({"loginName":"rambo1","pin":"1234","card_id":"<-------->"});
 
 db.passbold_users.createIndex( { "loginName": 1 }, { unique: true } );
 
