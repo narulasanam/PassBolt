@@ -1,0 +1,84 @@
+use passbold_db;
+
+db.categories.insert({"categoryName":"Social Networks","categoryIcon":"social","userName":"rambo1"});
+
+db.categories.insert({"categoryName":"Financial Banks","categoryIcon":"bank","userName":"rambo1"});
+
+db.categories.insert({"categoryName":"Email Accounts","categoryIcon":"email","userName":"rambo1"});
+
+db.categories.insert({"categoryName":"Utilities","categoryIcon":"other","userName":"rambo1"});
+
+db.categories.insert({"categoryName":"Social Networks","categoryIcon":"social","userName":"vishal"});
+
+db.categories.insert({"categoryName":"Financial Banks","categoryIcon":"bank","userName":"vishal"});
+
+db.categories.insert({"categoryName":"Email Accounts","categoryIcon":"email","userName":"vishal"});
+
+db.categories.insert({"categoryName":"Utilities","categoryIcon":"other","userName":"vishal"});
+
+db.category_items.insert({"categoryName":"Social Networks","itemName":"Facebook","itemURL":"https://www.facebook.com/","keyWord":"fb","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Social Networks","itemName":"Google+","itemURL":"https://plus.google.com/","keyWord":"goog","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Social Networks","itemName":"LinkedIn","itemURL":"https://www.linkedin.com/","keyWord":"link","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Social Networks","itemName":"Twitter","itemURL":"https://www.twitter.com/","keyWord":"twit","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Financial Banks","itemName":"TD Bank","itemURL":"https://www.google.com/","keyWord":"td","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Financial Banks","itemName":"Scotiabank","itemURL":"https://www.google.com/","keyWord":"scot","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Financial Banks","itemName":"CIBC","itemURL":"https://www.google.com/","keyWord":"cibc","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Financial Banks","itemName":"RBC","itemURL":"https://www.google.com/","keyWord":"rbc","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Email Accounts","itemName":"Gmail","itemURL":"https://www.google.com/","keyWord":"gmail","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Email Accounts","itemName":"UWaterloo Nexus","itemURL":"https://www.google.com/","keyWord":"nexus","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Email Accounts","itemName":"Yahoo","itemURL":"https://www.google.com/","keyWord":"yaho","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Email Accounts","itemName":"Outlook","itemURL":"https://www.google.com/","keyWord":"outl","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Utilities","itemName":"Fido","itemURL":"https://www.google.com/","keyWord":"fido","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Utilities","itemName":"Skype","itemURL":"https://www.google.com/","keyWord":"skyp","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Utilities","itemName":"Rogers","itemURL":"https://www.google.com/","keyWord":"rogr","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Utilities","itemName":"Bell","itemURL":"https://www.google.com/","keyWord":"bell","userName":"rambo1","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Social Networks","itemName":"Facebook","itemURL":"https://www.facebook.com/","keyWord":"fb","userName":"vishal","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Social Networks","itemName":"Google+","itemURL":"https://plus.google.com/","keyWord":"goog","userName":"vishal","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Social Networks","itemName":"LinkedIn","itemURL":"https://www.linkedin.com/","keyWord":"link","userName":"vishal","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Financial Banks","itemName":"Scotiabank","itemURL":"https://www.google.com/","keyWord":"scot","userName":"vishal","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Financial Banks","itemName":"CIBC","itemURL":"https://www.google.com/","keyWord":"cibc","userName":"vishal","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Email Accounts","itemName":"Gmail","itemURL":"https://www.google.com/","keyWord":"gmail","userName":"vishal","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Email Accounts","itemName":"UWaterloo Nexus","itemURL":"https://www.google.com/","keyWord":"nexus","userName":"vishal","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+db.category_items.insert({"categoryName":"Utilities","itemName":"Rogers","itemURL":"https://www.google.com/","keyWord":"rogr","userName":"vishal","itemUsername":"waterloopassbolt@gmail.com","itemPwd":"w"});
+
+--db.category_item_instances.insert({"categoryName":"Social Networks","itemName":"Facebook","instanceLogin":"waterloopassbolt@gmail.com","instancePwd":"w","userName":"rambo1"});
+
+--db.category_item_instances.insert({"categoryName":"Social Networks","itemName":"LinkedIn","instanceLogin":"waterloopassbolt@gmail.com","instancePwd":"w","userName":"rambo1"});
+
+--db.category_item_instances.insert({"categoryName":"Social Networks","itemName":"Facebook","instanceLogin":"waterloopassbolt@gmail.com","instancePwd":"w","userName":"vishal"});
+
+--db.category_item_instances.insert({"categoryName":"Social Networks","itemName":"LinkedIn","instanceLogin":"waterloopassbolt@gmail.com","instancePwd":"w","userName":"vishal"});
+
+
+db.passbold_users.insert({"loginName":"rambo1","pin":"1234","card_id":"3176045525"});
+
+db.passbold_users.insert({"loginName":"vishal","pin":"4321","card_id":"4287963199"});
+
+db.passbold_users.createIndex( { "loginName": 1 }, { unique: true } );
+
+db.category_item_instances.find();
+db.category_items.find();
+db.categories.find();
