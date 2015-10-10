@@ -4,4 +4,4 @@ HackThe North Hackathon Submission. This project was a one click solution for lo
 The mobile and desktop just need to be in the same wifi jone. A click on the mobile can automatically 
 launch the browser and will log in the user in respective site.
 
-Video Link : https://www.youtube.com/watch?v=j4T_I7nWfBU
+Video Link : http://y2u.be/j4T_I7nWfBU 
